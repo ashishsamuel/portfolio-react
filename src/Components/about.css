@@ -1,0 +1,44 @@
+.about-section{
+    /* height: 75vh; */
+    background-color: bisque;
+}
+
+.profileImage{
+    height: 300px;
+    /* width: 360px; */
+    border-radius: 25px;
+}
+
+.features{
+    border: 2px;
+    border-radius: 15px;
+    
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImagesection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.downloadcv-btn{
+    width: 145px;
+}
+
+.skillsdiv{
+    display: flex;
+}
+
+@media screen and (max-width:992px) {
+    .skillsdiv{
+        flex-direction: column;
+    }
+}
