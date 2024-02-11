@@ -6,7 +6,7 @@ function About() {
   return (
     <section id='about'>
         <div className='my-4 mt-5 section-title'>
-        <h2>About Me</h2>
+        <h2 className='text-dark fw-bold'>About Me</h2>
         <p>My introduction</p>
       </div>
     <div className='mt-5 about-section'>

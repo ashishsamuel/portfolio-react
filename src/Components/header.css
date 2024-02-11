@@ -6,6 +6,10 @@
     margin: 0px 15px;
 }
 
+.font-style{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 @media screen and (max-width:992px) {
     .nav_link{
         margin: 0px;

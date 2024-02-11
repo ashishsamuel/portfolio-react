@@ -11,7 +11,7 @@ function Qualification() {
   return (
     <section className="qualification-section my-5">
         <div className="d-flex justify-content-center flex-column align-items-center">
-            <h2 className="section-title">Qualification</h2>
+            <h2 className="section-title text-dark fw-bold">Qualification</h2>
             <p className="section-subtitle">My Personal Journey</p>
         </div>
 

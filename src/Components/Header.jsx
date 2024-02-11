@@ -8,7 +8,7 @@ function Header() {
     <>
     <Navbar expand="lg" className="bg-navbar">
       <div className='container'>
-        <Navbar.Brand href="#home" className='fs-5'>Ashish</Navbar.Brand>
+        <Navbar.Brand href="#home" className='fs-5 font-style fw-bold'>Ashish</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
           <Nav className='fw-bold'>

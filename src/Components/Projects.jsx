@@ -3,6 +3,8 @@ import './projects.css'
 import { Col, Row } from 'react-bootstrap'
 
 function Projects() {
+
+  const [projectActiveCheck,setProjectActiveCheck] = useState(1)
   const [projectList,setProjectList] = useState([
     {image:'images/jscalculator.png',title:'Age Calculator Application'},
     {image:'images/jsweather.png',title:'Weather Prediction Application'},
@@ -52,19 +54,54 @@ function Projects() {
   ])
   console.log(projectList);
 
+  const projectListSet = (projectTech)=>{
+    setProjectActiveCheck(false)
+    if(projectTech == "projectAllList"){
+      setProjectList(projectAllList)
+      setProjectActiveCheck(1)
+    }
+    else if(projectTech == "jsProjectList"){
+      setProjectList(jsProjectList)
+      setProjectActiveCheck(2)
+    }
+    else if(projectTech == "angularProjectList"){
+      setProjectList(angularProjectList)
+      setProjectActiveCheck(3)
+    }
+    else if(projectTech == "reactProjectList"){
+      setProjectList(reactProjectList)
+      setProjectActiveCheck(4)
+    }
+    else if(projectTech == "mernProjectList"){
+      setProjectList(mernProjectList)
+      setProjectActiveCheck(5)
+    }
+    else{
+      setProjectList(meanProjectList)
+      setProjectActiveCheck(6)
+    }
+
+  }
+
   return (
     <section className='projects-section' id='projects'>
       <div className='my-2 section-title'>
-        <h2>Projects</h2>
+        <h2 className='text-dark fw-bold'>Projects</h2>
         <p>Browse recent works</p>
 
         <ul className='d-flex mt-5 list-style'>
-          <li className='list-element mx-3 fw-bold' onClick={()=>setProjectList(projectAllList)}>All</li>
-          <li className='list-element mx-3 fw-bold' onClick={()=>setProjectList(jsProjectList)}>JavaScript</li>
-          <li className='list-element mx-3 fw-bold' onClick={()=>setProjectList(angularProjectList)}>Angular</li>
-          <li className='list-element mx-3 fw-bold' onClick={()=>setProjectList(reactProjectList)}>React</li>
-          <li className='list-element mx-3 fw-bold' onClick={()=>setProjectList(mernProjectList)}>MERN Stack</li>
-          <li className='list-element mx-3 fw-bold' onClick={()=>setProjectList(meanProjectList)}>MEAN Stack</li>
+          <li className={projectActiveCheck ==1?"project-content project-active mx-3":
+    "project-content mx-3"} onClick={()=>projectListSet("projectAllList")}>All</li>
+          <li className={projectActiveCheck ==2?"project-content project-active mx-3":
+    "project-content mx-3"} onClick={()=>projectListSet("jsProjectList")}>JavaScript</li>
+          <li className={projectActiveCheck ==3?"project-content project-active mx-3":
+    "project-content mx-3"} onClick={()=>projectListSet("angularProjectList")}>Angular</li>
+          <li className={projectActiveCheck ==4?"project-content project-active mx-3":
+    "project-content mx-3"} onClick={()=>projectListSet("reactProjectList")}>React</li>
+          <li className={projectActiveCheck ==5?"project-content project-active mx-3":
+    "project-content mx-3"}  onClick={()=>projectListSet("mernProjectList")}>MERN Stack</li>
+          <li className={projectActiveCheck ==6?"project-content project-active mx-3":
+    "project-content mx-3"}  onClick={()=>projectListSet("meanProjectList")}>MEAN Stack</li>
         </ul>
       </div>
       

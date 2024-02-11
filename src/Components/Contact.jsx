@@ -11,23 +11,19 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm('service_rw9erbd', 'template_347x0lt', form.current, '6mEANWc3NDSIvrxxQ')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+      e.target.reset()
   };
   return (
     <section className='contact-section' id='contact'>
       <div className='my-4 mt-5 section-title'>
-        <h2>Get in Touch</h2>
+        <h2 className='text-dark fw-bold'>Get in Touch</h2>
         <p>Contact Me</p>
       </div>
 
       {/* <div className='d-flex container justify-content-center'> */}
         <Row className='d-flex justify-content-center mx-5'>
             <Col lg={6} md={12} sm={12} className='flex-property'>
-                <h3>Talk to me</h3>
+                <h3 className='text-dark'>Talk to me</h3>
                 <div className='write-section'>
                 <i class="uil uil-envelope-minus"></i>
                 <p>Email</p>
@@ -51,7 +47,7 @@ function Contact() {
             </Col>
 
             <Col lg={6} md={12} sm={12} className='flex-column'>
-                <h3>Write me your Project</h3>
+                <h3 className='text-dark'>Write me your Project</h3>
                 <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Name</Form.Label>
