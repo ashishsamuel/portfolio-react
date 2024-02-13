@@ -1,8 +1,12 @@
 import React from 'react'
 import './about.css'
 import { Row,Col, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function About() {
+  const handleDownload = ()=>{
+    window.open('/files/updated_cv.pdf', '_blank')
+  }
   return (
     <section id='about'>
         <div className='my-4 mt-5 section-title'>
@@ -22,26 +26,35 @@ function About() {
                 <div className='skillsdiv'>
                     <div className='features m-3 px-4 text-center shadow'>
                         <i class="uil uil-award fa-2x"></i>
-                        <p>Experience</p>
-                        <p>2 + Years</p>
+                        <p className='fw-bold'>Experience</p>
+                        <p className='fw-bold'>2 + Years</p>
                     </div>
                     <div className='features m-3 px-4 text-center shadow'>
                         <i class="uil uil-bag-alt fa-2x"></i>
-                        <p>Completed</p>
-                        <p>20 + Projects</p>
+                        <p className='fw-bold'>Completed</p>
+                        <p className='fw-bold'>20 + Projects</p>
                     </div>
                     <div className='features m-3 px-4 text-center shadow'>
                         <i class="uil uil-headphones-alt fa-2x"></i>
-                        <p>Support</p>
-                        <p>Online 24/7</p>
+                        <p className='fw-bold'>Support</p>
+                        <p className='fw-bold'>Online 24/7</p>
                     </div>
                 </div>
-                <div className='my-5 mx-3'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam ab consequatur, explicabo quod eius aperiam dicta numquam voluptatibus distinctio, quaerat minima, accusamus commodi. Recusandae optio autem maiores enim nam voluptatum odio hic quae magnam, aliquam excepturi corrupti fuga earum. Doloremque odio expedita eos repudiandae exercitationem cum pariatur ex enim.
+                <div className='my-5 mx-3 font-fam'>
+                  <span className='fw-bold'>*</span> I have a total of 2 years of experience in Front End Technologies - Angular and React JS.
+                   I have also completed a Full Stack Developer course (MEAN & MERN) from Luminar Technolab, Kochi. <br />
+                   <span className='fw-bold'>*</span> I have completed more than 20 projects in Web application development.I have worked on the implementation of
+                   Front-End part of applications as per specification and design approach using HTML5, CSS, Bootstrap, JavaScript,
+                  Typescript Angular and React JS. <br /><span className='fw-bold' style={{textAlign:'justify'}}>*</span> I have worked on removing impediments to the team's progress, 
+                  and offering help when needed and	responsible for the design, writing and refactoring of high-quality codes 
+                  and development of various technical features for the application within an Agile team. <br />
+                  <span className='fw-bold'>*</span> I have worked on the	design and implemented hotfixes and patches to resolve issues in the project.
+                
                 </div>
 
                 <div className='mx-3'>
-                    <button className='btn btn-dark downloadcv-btn'>Download CV</button>
+
+                    <a href='/files/updated_cv.pdf' download><button onClick={handleDownload} className='btn btn-dark downloadcv-btn'>Download CV</button></a>
                 </div>
             </Col>
           </Row>

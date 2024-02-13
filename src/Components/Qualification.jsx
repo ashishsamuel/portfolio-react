@@ -9,7 +9,7 @@ function Qualification() {
         setToggleState(index)
     }
   return (
-    <section className="qualification-section my-5">
+    <section className="qualification-section my-5" id="qualification">
         <div className="d-flex justify-content-center flex-column align-items-center">
             <h2 className="section-title text-dark fw-bold">Qualification</h2>
             <p className="section-subtitle">My Personal Journey</p>
@@ -32,16 +32,16 @@ function Qualification() {
     "qualification-content"}>
             <div className="qualification-data mt-3">
                 <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
+                    <h3 className="qualification-title">Bachelor of Technology (CSE)</h3>
+                    <span className="qualification-subtitle">College of Engineering Chengannur</span>
                     <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
+                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2016 - 2020
                     </div>
                 </div>
 
                 <div>
                     <span className="qualification-rounder"></span>
-                    <spam className="qualification-line"></spam>
+                    <span className="qualification-line"></span>
                 </div>
             </div>
 
@@ -53,10 +53,10 @@ function Qualification() {
                 </div>
                 
                 <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
+                    <h3 className="qualification-title">Higher Secondary Education</h3>
+                    <span className="qualification-subtitle">Bishop Hodges Higher Secondary Mavelikara</span>
                     <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
+                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2014 - 2016
                     </div>
                 </div>
 
@@ -64,51 +64,35 @@ function Qualification() {
 
             <div className="qualification-data mt-3">
                 <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
+                    <h3 className="qualification-title">Secondary Education</h3>
+                    <span className="qualification-subtitle">Eminence Public School Pandalam</span>
                     <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
+                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2013 - 2014
                     </div>
                 </div>
 
-                <div>
-                    <span className="qualification-rounder"></span>
-                    <spam className="qualification-line"></spam>
-                </div>
-            </div>
-
-            <div className="qualification-data mt-3">
-                <div></div>
                 <div>
                     <span className="qualification-rounder"></span>
                     <span className="qualification-line"></span>
                 </div>
-                
-                <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
-                    <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
-                    </div>
-                </div>
-
             </div>
+
         </div>
 
         <div className={toggleState ===2?"qualification-content qualification-content-active":
     "qualification-content"}>
             <div className="qualification-data mt-3">
                 <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
+                    <h3 className="qualification-title">Software Engineer (UI Developer)</h3>
+                    <span className="qualification-subtitle">Digit General Insurance, Thiruvananthapuram</span>
                     <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
+                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>February 2024 - Present
                     </div>
                 </div>
 
                 <div>
                     <span className="qualification-rounder"></span>
-                    <spam className="qualification-line"></spam>
+                    <span className="qualification-line"></span>
                 </div>
             </div>
 
@@ -120,10 +104,10 @@ function Qualification() {
                 </div>
                 
                 <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
+                    <h3 className="qualification-title">Full Stack Developer Intern (MEARN Stack Developer)</h3>
+                    <span className="qualification-subtitle">Luminar Technolab, Kochi</span>
                     <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
+                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>June 2023 - January 2024
                     </div>
                 </div>
 
@@ -131,16 +115,16 @@ function Qualification() {
 
             <div className="qualification-data mt-3">
                 <div>
-                    <h3 className="qualification-title">B.Tech (cs)</h3>
-                    <span className="qualification-subtitle">Cec Chengannur</span>
+                    <h3 className="qualification-title">Senior Systems Engineer (UI Developer)</h3>
+                    <span className="qualification-subtitle">Infosys Limited, Thiruvananthapuram</span>
                     <div className="qualification-calendar">
-                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>2021 - Present
+                    <i class="uil uil-calendar-alt  me-2 calendar-icon"></i>March 2021 - March 2023
                     </div>
                 </div>
 
                 <div>
                     <span className="qualification-rounder"></span>
-                    <spam className="qualification-line"></spam>
+                    <span className="qualification-line"></span>
                 </div>
             </div>
 

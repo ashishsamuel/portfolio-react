@@ -25,8 +25,12 @@ function Homeintro() {
                 <div className='d-flex flex-column my-4' data-aos="fade-left">
                     <h3 className='text-dark fw-bold'>Ashish Samuel Thomson</h3>
                     <h5 className='text-dark font-style fw-bold'>------  UI Developer  ------</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est harum numquam quasi molestias quia sunt nisi architecto, soluta possimus ad tempora maiores, ipsam quis amet. Itaque a iste deserunt.</p>
-                    <button className='btn btn-dark hello-btn'>Say Hello</button>
+                    <p style={{fontFamily:'cursive',fontStyle:'italic'}}>Experienced in crafting dynamic web applications using modern technologies to
+enhance user experience and drive engagement using React JS and Angular.
+Entry-level individual skilled in Node.js and MongoDB.
+</p>
+
+<a href="mailto:ashishsamuelthomson@gmail.com?subject = Hello Message&body = Message to say hello" className='text-dark' style={{textDecoration:'none'}}><button className='btn btn-dark hello-btn'>Say Hello</button></a>
                 </div>
         </div>
         </Col>

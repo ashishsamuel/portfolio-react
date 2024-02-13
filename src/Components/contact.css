@@ -1,17 +1,40 @@
 
 .flex-property{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
 
+.write-section{
+    padding: 23px;
+    width: 390px;
+    margin: 60px 6px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 @media screen and (min-width:768px) and (max-width:992px){
     .flex-property{
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .write-section{
+        padding: 23px;
+        width: 390px;
+        margin: 10px 6px;
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .margintop-2{
+        margin-top: 30px;
     }
 }
 
@@ -24,10 +47,14 @@
     .write-section{
         padding: 23px;
         width: 390px;
-        margin: 6px;
-        border: 1px solid;
+        margin: 20px 6px;
+        /* border: 1px solid; */
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .margintop-2{
+        margin-top: 20px;
     }
 }

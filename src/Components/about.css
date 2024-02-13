@@ -1,6 +1,6 @@
 .about-section{
     /* height: 75vh; */
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 .profileImage{
@@ -12,7 +12,13 @@
 .features{
     border: 2px;
     border-radius: 15px;
+    background-color: #484e53;
+    color: white;
     
+}
+
+.font-fam{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .section-title{
