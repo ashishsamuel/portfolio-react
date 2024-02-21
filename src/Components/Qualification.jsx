@@ -12,7 +12,7 @@ function Qualification() {
     <section className="qualification-section my-5" id="qualification">
         <div className="d-flex justify-content-center flex-column align-items-center">
             <h2 className="section-title text-dark fw-bold">Qualification</h2>
-            <p className="section-subtitle">My Personal Journey</p>
+            <p className="section-subtitle" style={{fontStyle:'italic',fontWeight:'bold'}}>My Personal Journey</p>
         </div>
 
         <div className="qualification-container container">
@@ -30,8 +30,8 @@ function Qualification() {
             <div className="mt-5 qualification-section">
         <div className={toggleState ===1?"qualification-content qualification-content-active":
     "qualification-content"}>
-            <div className="qualification-data mt-3">
-                <div>
+            <div className="qualification-data mt-3"> 
+                <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
                     <h3 className="qualification-title">Bachelor of Technology (CSE)</h3>
                     <span className="qualification-subtitle">College of Engineering Chengannur</span>
                     <div className="qualification-calendar">
@@ -52,7 +52,7 @@ function Qualification() {
                     <span className="qualification-line"></span>
                 </div>
                 
-                <div>
+                <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
                     <h3 className="qualification-title">Higher Secondary Education</h3>
                     <span className="qualification-subtitle">Bishop Hodges Higher Secondary Mavelikara</span>
                     <div className="qualification-calendar">
@@ -63,7 +63,7 @@ function Qualification() {
             </div>
 
             <div className="qualification-data mt-3">
-                <div>
+                <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
                     <h3 className="qualification-title">Secondary Education</h3>
                     <span className="qualification-subtitle">Eminence Public School Pandalam</span>
                     <div className="qualification-calendar">
@@ -82,7 +82,7 @@ function Qualification() {
         <div className={toggleState ===2?"qualification-content qualification-content-active":
     "qualification-content"}>
             <div className="qualification-data mt-3">
-                <div>
+                <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
                     <h3 className="qualification-title">Software Engineer (UI Developer)</h3>
                     <span className="qualification-subtitle">Digit General Insurance, Thiruvananthapuram</span>
                     <div className="qualification-calendar">
@@ -103,7 +103,7 @@ function Qualification() {
                     <span className="qualification-line"></span>
                 </div>
                 
-                <div>
+                <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
                     <h3 className="qualification-title">Full Stack Developer Intern (MEARN Stack Developer)</h3>
                     <span className="qualification-subtitle">Luminar Technolab, Kochi</span>
                     <div className="qualification-calendar">
@@ -114,7 +114,7 @@ function Qualification() {
             </div>
 
             <div className="qualification-data mt-3">
-                <div>
+                <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
                     <h3 className="qualification-title">Senior Systems Engineer (UI Developer)</h3>
                     <span className="qualification-subtitle">Infosys Limited, Thiruvananthapuram</span>
                     <div className="qualification-calendar">

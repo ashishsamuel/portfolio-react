@@ -11,36 +11,36 @@ function About() {
     <section id='about'>
         <div className='my-4 mt-5 section-title'>
         <h2 className='text-dark fw-bold'>About Me</h2>
-        <p>My introduction</p>
+        <p style={{fontStyle:'italic',fontWeight:'bold'}}>My Introduction</p>
       </div>
     <div className='mt-5 about-section'>
       
 
       <Container>
           <Row className='mt-5 justify-content-center py-4'>
-            <Col lg={6} md={6} sm={12} className='profileImagesection'>
+            <Col lg={6} md={6} sm={12} className='profileImagesection' data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2500">
               <img className='profileImage' src="/images/profileimg2.jpg" alt="profile image" />
             </Col>
 
             <Col lg={6} md={6} sm={12} className='d-flex flex-column'>
                 <div className='skillsdiv'>
-                    <div className='features m-3 px-4 text-center shadow'>
+                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
                         <i class="uil uil-award fa-2x"></i>
                         <p className='fw-bold'>Experience</p>
                         <p className='fw-bold'>2 + Years</p>
                     </div>
-                    <div className='features m-3 px-4 text-center shadow'>
+                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
                         <i class="uil uil-bag-alt fa-2x"></i>
                         <p className='fw-bold'>Completed</p>
                         <p className='fw-bold'>20 + Projects</p>
                     </div>
-                    <div className='features m-3 px-4 text-center shadow'>
+                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
                         <i class="uil uil-headphones-alt fa-2x"></i>
                         <p className='fw-bold'>Support</p>
                         <p className='fw-bold'>Online 24/7</p>
                     </div>
                 </div>
-                <div className='my-5 mx-3 font-fam'>
+                <div className='my-5 mx-3 font-fam' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
                   <span className='fw-bold'>*</span> I have a total of 2 years of experience in Front End Technologies - Angular and React JS.
                    I have also completed a Full Stack Developer course (MEAN & MERN) from Luminar Technolab, Kochi. <br />
                    <span className='fw-bold'>*</span> I have completed more than 20 projects in Web application development.I have worked on the implementation of
@@ -52,7 +52,7 @@ function About() {
                 
                 </div>
 
-                <div className='mx-3'>
+                <div className='mx-3' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
 
                     <a href='/files/updated_cv.pdf' download><button onClick={handleDownload} className='btn btn-dark downloadcv-btn'>Download CV</button></a>
                 </div>

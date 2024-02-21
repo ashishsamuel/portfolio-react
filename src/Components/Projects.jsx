@@ -107,7 +107,7 @@ function Projects() {
     <section className='projects-section' id='projects'>
       <div className='my-2 section-title'>
         <h2 className='text-dark fw-bold'>Projects</h2>
-        <p>Browse recent works</p>
+        <p style={{fontStyle:'italic',fontWeight:'bold'}}>Browse recent works</p>
 
         <ul className='d-flex mt-5 list-style flex-wrap'>
           <li className={projectActiveCheck ==1?"project-content project-active mx-3 my-4":
@@ -131,7 +131,7 @@ function Projects() {
 
       <Row className='justify-content-center'>
         {projectList.length>0? projectList.map(project=>(
-          <Col lg={4} md={6} sm={12} className='my-3'>
+          <Col lg={4} md={6} sm={12} className='my-3' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="2000">
             <div className='shadow project-col'>
               <img className='projectImage img-fuild shadow' src={project.image} alt="js age calculator" />
               <div className='px-4'>
@@ -155,7 +155,6 @@ function Projects() {
                     <img src={modalData.image} alt="project image" className='img-fluid' style={{height:'235px'}}/>
                 </Col>
                 <Col md={6} sm={12} lg={6}>
-                  {/* <h2 className='text-info fw-bolder fs-4'>{modalData.title}</h2> */}
                   <p className='fw-bolder text-info fs-5'>Project Overview : <span className='font-italic text-dark' style={{fontSize:'12px'}}>{modalData.overview}</span>
                   </p>
                   <p className='fw-bolder text-info fs-5'>Languages used : <span className='fw-bolder text-dark' style={{fontSize:'12px'}}>{modalData.languages}</span></p>
@@ -168,100 +167,6 @@ function Projects() {
         </Modal.Body>
       </Modal>
       
-
-
-        {/* <Row className='justify-content-center'>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/jsagecalculator.png" alt="js age calculator" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Age Calculator Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/jsweather.png" alt="js weather prediction" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Weather Prediction Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/netflixreact.png" alt="react netflix" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Netflix Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className='justify-content-center my-3'>
-          
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/quizappreact.png" alt="react quiz app" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Quiz Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/reactecommerce.png" alt="react ecommerce" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Zesco Clothing Store Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/firebasedocupapp.png" alt="docup firebase" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Document Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className='justify-content-center my-3'>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/mern.png" alt="mern travel booking" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>Travel Booking Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/meanproject.png" alt="mean ecommerce" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>ProBuy Ecommerce Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <div className='shadow project-col'>
-              <img className='projectImage img-fuild shadow' src="images/reactgameapp.png" alt="react game app" />
-              <div className='px-4'>
-                <h3 className='my-3 project-name'>DiceGame Application</h3>
-                <button className='btn btn-dark shadow d-flex align-items-center viewbtn'>View More <i class="uil uil-arrow-right ms-2 fa-2x"></i></button>
-              </div>
-            </div>
-          </Col>
-        </Row> */}
-
-
       </div>
     </section>
   )
