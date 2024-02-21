@@ -24,7 +24,7 @@ function Homeintro() {
                 </div>
                 <div className='d-flex flex-column my-4' data-aos="fade-left">
                     <h3 className='text-dark fw-bold'>Ashish Samuel Thomson</h3>
-                    <h5 className='text-dark font-style fw-bold'>------  UI Developer  ------</h5>
+                    <h5 className='text-dark font-style fw-bold'>------  Full Stack Developer  ------</h5>
                     <p style={{fontFamily:'cursive',fontStyle:'italic'}}>Experienced in crafting dynamic web applications using modern technologies to
 enhance user experience and drive engagement using React JS and Angular.
 Entry-level individual skilled in Node.js and MongoDB.

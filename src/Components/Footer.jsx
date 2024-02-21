@@ -4,7 +4,7 @@ import './footer.css'
 function Footer() {
   return (
     <div className='container text-center mt-5'>
-        <h3 className='text-dark fw-bold'>Ashish</h3>
+        <h5 className='text-dark fw-bold' style={{fontStyle:'italic'}}>Ashish Samuel Thomson</h5>
         <div className='d-flex justify-content-center mt-5'>
             <a className='fw-bold mx-3 text-dark' href='#about' style={{textDecoration:'none'}}>About</a>
             <a className='fw-bold mx-3 text-dark' href='#projects' style={{textDecoration:'none'}}>Projects</a>
