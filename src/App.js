@@ -11,6 +11,7 @@ import Scrollup from './Components/Scrollup';
 import Skills from './Components/Skills';
 import './bootstrap.min.css'
 import AOS from "aos";
+import './App.css'
 
 function App() {
   useEffect(() => {
