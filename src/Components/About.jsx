@@ -18,11 +18,8 @@ function About() {
 
       <Container>
           <Row className='mt-5 justify-content-center py-4'>
-            <Col lg={6} md={6} sm={12} className='profileImagesection' data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2500">
-              <img className='profileImage' src="/images/profileimg2.jpg" alt="profile image" />
-            </Col>
 
-            <Col lg={6} md={6} sm={12} className='d-flex flex-column'>
+            <Col lg={6} md={12} sm={12} className='d-flex flex-column'>
                 <div className='skillsdiv'>
                     <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
                         <i class="uil uil-award fa-2x"></i>
@@ -56,6 +53,10 @@ function About() {
 
                     <a href='/files/updated_cv.pdf' download><button onClick={handleDownload} className='btn btn-dark downloadcv-btn'>Download CV</button></a>
                 </div>
+            </Col>
+
+            <Col lg={6} md={12} sm={12} className='profileImagesection' data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2500">
+              <img className='profileImage' src="/images/profileimg2.jpg" alt="profile image" />
             </Col>
           </Row>
       </Container>

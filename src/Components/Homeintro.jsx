@@ -20,7 +20,7 @@ function Homeintro() {
                   
                     <h3 className='text-dark fw-bold'>Ashish Samuel Thomson</h3>
                     <h5 className='text-dark font-style fw-bold'>------  Full Stack Developer  ------</h5>
-                    <p style={{fontFamily:'cursive',fontStyle:'italic'}}>Experienced in crafting dynamic web applications using modern technologies to
+                    <p style={{fontStyle:'italic'}}>Experienced in crafting dynamic web applications using modern technologies to
 enhance user experience and drive engagement using React JS and Angular.
 Entry-level individual skilled in Node.js and MongoDB.
 </p>
@@ -30,7 +30,7 @@ Entry-level individual skilled in Node.js and MongoDB.
         </div>
         </Col>
         <Col lg={5} md={5} sm={12} className='text-center' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="2000">
-            <img className='profileImage' src="/images/profileimg3.png" alt="profile image" />
+            <img className='profileImage' src="/images/profile5.png" alt="profile image" />
         </Col>
       </Row>
       
